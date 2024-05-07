@@ -9,12 +9,13 @@
     font-optical-sizing: auto;
     font-style: normal;
     color: black; 
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
-.navbar-brand .navbar-item{
+.navbar-for-Ronnie-dev .navbar-item {
     font-size: 24px;
+    margin-left: 40px;
+    font-weight: 800;
 }
 
 .navbar {
@@ -22,28 +23,50 @@
     justify-content: space-between; 
     align-items: center; 
     padding: 10px; 
+    margin-top: 15px;
 }
 
 .navbar-menu {
     display: flex;
-    justify-content: space space-between; 
-    margin-left: 50px;
-    
-}
-
-.navbar-menu .navbar-end {
-    text-decoration: none;
+    justify-content: space-between; 
+    margin-left: 50px; 
 }
 
 .navbar-end {
     display: flex; 
-    gap: 100px;
+    gap: 30px; 
     text-decoration: none;
-     
+    margin-right: 40px;
 }
 
-.navbar-menu .navbar-end {
-    text-decoration: none;
+.menu-button {
+    display: none; 
 }
+
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .menu-button span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+    }
+}
+
+.navbar-menu.show {
+    display: flex;
+    
+   
+}
+
 
 
