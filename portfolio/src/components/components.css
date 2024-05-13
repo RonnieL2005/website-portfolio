@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
 
 .raleway-bold {
     font-weight: bold;
 }
 
 .navbar-item {
-    font-family: "Raleway", sans-serif;
+    font-family: "Darker Grotesque", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: black; 
@@ -50,7 +51,7 @@
     }
 
     .menu-button {
-        display: block;
+        display: inline-block;
     }
 
     .menu-button span {
@@ -64,9 +65,55 @@
 
 .navbar-menu.show {
     display: flex;
-    
+
    
 }
+
+
+/*this is the end of Navbar component */
+
+
+
+
+.dropdown {
+    position: absolute;
+    top: 6.5rem;
+    left: 20.5rem;
+    width: 120px;
+    padding: 15px;
+    border-radius: 0px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border: 1px solid rgb(247, 239, 239)
+    
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f4f4f4;
+}
+
+.dropdown:before{
+    content: '';
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
 
 
 
