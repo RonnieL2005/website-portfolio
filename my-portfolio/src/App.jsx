@@ -23,12 +23,13 @@ const Navbar = () => {
   <div className={`flex md:flex-row space-y-4 md:space-y-0 md:items-center ${isMenuOpen ? 'block' : 'hidden md:flex'}`}>
     <div className="relative">
     </div>
-    <div className="flex flex-col"> {/* Added flex-col to ensure vertical placement */}
+    <div className={`flex ${isMenuOpen ? 'flex-col' : 'flex-row'} md:mx-4`}>
+      {/* Conditionally apply flex-col for mobile screens */}
       <Link
         to="about"
         smooth={true}
         duration={300}
-        className="font-major-mono font-bold text-xl text-black cursor-pointer md:mx-4" // Added md:mx-4 for horizontal spacing
+        className="font-major-mono font-bold text-xl text-black cursor-pointer md:mx-4"
         easing="easeInQuart"
         onClick={() => setIsMenuOpen(false)}
       >
@@ -38,7 +39,7 @@ const Navbar = () => {
         to="experience"
         smooth={true}
         duration={300}
-        className="font-major-mono font-bold text-xl text-black cursor-pointer md:mx-4" // Added md:mx-4 for horizontal spacing
+        className="font-major-mono font-bold text-xl text-black cursor-pointer md:mx-4"
         easing="easeInQuart"
         onClick={() => setIsMenuOpen(false)}
       >
@@ -48,7 +49,7 @@ const Navbar = () => {
         to="projects"
         smooth={true}
         duration={300}
-        className="font-major-mono font-bold text-xl text-black cursor-pointer md:mx-4" // Added md:mx-4 for horizontal spacing
+        className="font-major-mono font-bold text-xl text-black cursor-pointer md:mx-4"
         easing="easeInQuart"
         onClick={() => setIsMenuOpen(false)}
       >
@@ -58,7 +59,7 @@ const Navbar = () => {
         to="contact"
         smooth={true}
         duration={300}
-        className="font-major-mono font-bold text-xl text-black cursor-pointer md:mx-4" // Added md:mx-4 for horizontal spacing
+        className="font-major-mono font-bold text-xl text-black cursor-pointer md:mx-4"
         easing="easeInQuart"
         onClick={() => setIsMenuOpen(false)}
       >
@@ -67,6 +68,7 @@ const Navbar = () => {
     </div>
   </div>
 </nav>
+
 
   );
 };
@@ -114,7 +116,7 @@ const App = () => {
         </div>
       </Element>
 
-      <Element name="experience" className="h-screen bg-gray-300 pt-20">
+      <Element name="experience" className="h-screen bg-white pt-20">
         <h2 className="text-2xl md:text-3xl font-bold">Experience</h2>
         <p>Experience section content goes here...</p>
       </Element>
