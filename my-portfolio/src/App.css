@@ -1,0 +1,80 @@
+/* Navbar Styles */
+nav {
+    background-color: #fff;
+    width: 100%;
+    height: 4rem; /* Adjust height as needed */
+    position: fixed;
+    top: 0;
+    z-index: 50;
+  }
+  
+  nav .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem; /* Adjust padding as needed */
+  }
+  
+  nav .font-danfo {
+    font-family: 'Danfo', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #000;
+  }
+  
+  nav button {
+    color: #000;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    cursor: pointer;
+  }
+  
+  nav .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  nav .dropdown-menu.show {
+    display: block;
+  }
+  
+  nav .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    color: #000;
+    text-decoration: none;
+  }
+  
+  nav .dropdown-menu a:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    nav .flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav .md\\:flex {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    nav .md\\:flex-row {
+      flex-direction: column;
+    }
+  
+    nav .md\\:space-y-4 {
+      margin-top: 0.5rem; /* Adjust margin as needed */
+    }
+  }
+  
