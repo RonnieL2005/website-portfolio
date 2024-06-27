@@ -116,7 +116,10 @@ const App = () => {
         </div>
       </Element>
 
-      <Element name="experience" className="h-screen bg-white pt-20 flex flex-col items-center">
+
+
+
+  <Element name="experience" className="h-screen bg-white pt-20 flex flex-col items-center">
   <div className="w-full max-w-4xl">
     <div className="experience-section mt-10 text-center">
       <div className="job">
@@ -135,7 +138,7 @@ const App = () => {
         <div className="mt-2 text-md md:text-lg font-semibold text-gray-600">
           <p>Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems, AI machine learning</p>
         </div>
-        <h3 className="text-xl md:text-2xl font-semibold mt-10">Certificate in Software Engineering</h3>
+        <h3 className="text-xl md:text-2xl font-bold mt-10">Certificate in Software Engineering</h3>
         <p className="text-md md:text-lg font-bold text-black">Moringa School</p>
         <p className="text-md md:text-lg font-semibold text-black">Graduated May 2024</p>
         <div className="mt-2 text-md md:text-lg font-semibold text-gray-600">
@@ -149,15 +152,40 @@ const App = () => {
 
 
 
-      <Element name="projects" className="h-screen bg-gray-400 pt-20">
-        <h2 className="text-2xl md:text-3xl font-bold">Projects</h2>
-        <p>Projects section content goes here...</p>
-      </Element>
+<Element name="projects" className="h-screen bg-white pt-20 flex flex-col items-center">
+  <div className="w-full max-w-4xl">
+    <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">PROJECTS</h2>
+    <div className="project text-center">
+      <p className="text-lg mb-6 font-bold">
+        "MyDuka" is an inventory management application designed to streamline record-keeping and stock-taking processes for businesses. The application offers a comprehensive solution for generating and visualizing weekly, monthly, and annual reports, empowering business owners to make more informed decisions.
+      </p>
+      <div className="flex justify-center space-x-4 mb-4 font-semibold ">
+        <a href="https://github.com/Daveroy-Mutisya/MyDuka-Backend/tree/dev" target="_blank" rel="noopener noreferrer" className="flex items-center px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-900">
+          <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fillRule="evenodd" d="M10 0a10 10 0 100 20 10 10 0 000-20zm1 14.93v1.27c0 .59-.05.85-.14 1.11-.09.26-.21.48-.37.65-.16.18-.37.32-.63.42-.25.1-.54.15-.88.15h-1.6c-.33 0-.62-.05-.87-.15a1.7 1.7 0 01-.63-.42c-.16-.17-.29-.39-.37-.65-.08-.26-.13-.52-.14-1.11V14a2.7 2.7 0 01.27-1.25c.12-.27.29-.5.52-.72.23-.22.51-.4.84-.54.33-.14.7-.21 1.1-.21h.94c.39 0 .76.07 1.1.21.33.14.61.32.84.54.22.22.4.45.52.72.12.27.19.57.27 1.25zm-1-10.73c-4.63 0-8.4 3.78-8.4 8.4 0 3.7 2.4 6.83 5.72 7.94.42.08.57-.18.57-.4 0-.2-.01-.92-.01-1.8-2.09.38-2.53-.51-2.68-.98-.09-.23-.48-.98-.82-1.18-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.96 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.52 7.52 0 012 0c1.53-1.05 2.2-.82 2.2-.82.45 1.1.17 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.08-1.87 3.76-3.65 3.96.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .22.15.48.57.4a8.4 8.4 0 005.72-7.94c0-4.62-3.77-8.4-8.4-8.4z" clipRule="evenodd" />
+          </svg>
+          GitHub Repo
+        </a>
+      </div>
+    </div>
+  </div>
+</Element>
 
-      <Element name="contact" className="h-screen bg-gray-500 pt-20">
-        <h2 className="text-2xl md:text-3xl font-bold">Contact</h2>
-        <p>Contact section content goes here...</p>
-      </Element>
+
+
+<Element name="contact" className="h-screen bg-white pt-0 flex flex-col justify-center items-center">
+  <div className="w-full max-w-4xl">
+    <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">Contact Me</h2>
+    <div className="contact-info text-center">
+      <p className="text-lg mb-4 font-bold text-gray-600">For inquiries, you can reach me at:</p>
+      <p className="text-xl font-bold mb-2">Email:</p>
+      <p className="text-lg mb-6 font-bold text-gray-600"><a href="mailto:ronnielangat2020@gmail.com" className="font-bold text-gray-600 hover:underline">ronnielangat2020@gmail.com</a></p>
+      <p className="text-xl font-bold mb-2">Phone:</p>
+      <p className="text-lg mb-6"><a href="tel:+254717660856" className="font-bold text-gray-600 hover:underline">(+254) 717660856</a></p>
+    </div>
+  </div>
+</Element>
+
     </div>
   );
 };
