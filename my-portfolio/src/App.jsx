@@ -116,10 +116,38 @@ const App = () => {
         </div>
       </Element>
 
-      <Element name="experience" className="h-screen bg-white pt-20">
-        <h2 className="text-2xl md:text-3xl font-bold">Experience</h2>
-        <p>Experience section content goes here...</p>
-      </Element>
+      <Element name="experience" className="h-screen bg-white pt-20 flex flex-col items-center">
+  <div className="w-full max-w-4xl">
+    <div className="experience-section mt-10 text-center">
+      <div className="job">
+        <h3 className="text-xl md:text-2xl font-bold">EXPERIENCE</h3>
+        <div className="mt-2 text-md md:text-lg font-semibold text-gray-600">
+          <p>2+ years of experience in backend and frontend development.</p>
+        </div>
+      </div>
+    </div>
+    <h2 className="text-2xl md:text-3xl font-bold mt-20 text-center">EDUCATION</h2>
+    <div className="education-section mt-10 text-center">
+      <div className="education">
+        <h3 className="text-xl md:text-2xl font-bold">Bachelor of Science, Data Science and Analytics</h3>
+        <p className="text-ms md:text-lg text-black font-bold">United States International University</p>
+        <p className="text-md md:text-lg font-semibold text-black text-2xl">Graduating in August 2028</p>
+        <div className="mt-2 text-md md:text-lg font-semibold text-gray-600">
+          <p>Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems, AI machine learning</p>
+        </div>
+        <h3 className="text-xl md:text-2xl font-semibold mt-10">Certificate in Software Engineering</h3>
+        <p className="text-md md:text-lg font-bold text-black">Moringa School</p>
+        <p className="text-md md:text-lg font-semibold text-black">Graduated May 2024</p>
+        <div className="mt-2 text-md md:text-lg font-semibold text-gray-600">
+          <p>Relevant coursework: Web Development, UI/UX Design, Data Structures, Frontend and Backend Development</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Element>
+
+
+
 
       <Element name="projects" className="h-screen bg-gray-400 pt-20">
         <h2 className="text-2xl md:text-3xl font-bold">Projects</h2>
